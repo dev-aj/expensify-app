@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import moment from 'moment';
+import NumberFormat from 'react-number-format';
 
 const ExpenseListItem = ({ id, description, amount, createdAt }) => {
     return (
@@ -9,7 +10,11 @@ const ExpenseListItem = ({ id, description, amount, createdAt }) => {
                 <h3> {description} </h3>
             </Link>
             
-            <p>{amount} - {createdAt}</p>
+            <p>
+            {<NumberFormat thousandSeparator={true} thousandsGroupStyle="lakh" prefix={'₹'} displayType="text" value={amount} />}{/*amount*/}
+            - 
+            {moment(createdAt).format("dddd, MMMM Do YYYY, h:mm:ss a")}
+            </p>
         </div>
     );
 };

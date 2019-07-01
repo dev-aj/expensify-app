@@ -12,9 +12,30 @@ exports[`Should render expenseListItem with expenses item 1`] = `
     </h3>
   </Link>
   <p>
-    213
-     - 
-    0
+    <NumberFormat
+      allowEmptyFormatting={false}
+      allowNegative={true}
+      decimalSeparator="."
+      displayType="text"
+      fixedDecimalScale={false}
+      getInputRef={[Function]}
+      isAllowed={[Function]}
+      isNumericString={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseUp={[Function]}
+      onValueChange={[Function]}
+      prefix="₹"
+      suffix=""
+      thousandSeparator={true}
+      thousandsGroupStyle="lakh"
+      type="text"
+      value={213}
+    />
+    -
+    Thursday, January 1st 1970, 5:30:00 am
   </p>
 </div>
 `;
