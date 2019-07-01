@@ -35,7 +35,7 @@ exports[`Should render expenseListItem with expenses item 1`] = `
       value={213}
     />
     -
-    Thursday, January 1st 1970, 5:30:00 am
+    Thursday, January 1st 1970
   </p>
 </div>
 `;

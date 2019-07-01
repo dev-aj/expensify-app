@@ -13,7 +13,7 @@ const ExpenseListItem = ({ id, description, amount, createdAt }) => {
             <p>
             {<NumberFormat thousandSeparator={true} thousandsGroupStyle="lakh" prefix={'₹'} displayType="text" value={amount} />}{/*amount*/}
             - 
-            {moment(createdAt).format("dddd, MMMM Do YYYY, h:mm:ss a")}
+            {moment(createdAt).format("dddd, MMMM Do YYYY")}
             </p>
         </div>
     );
