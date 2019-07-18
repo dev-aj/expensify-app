@@ -16,7 +16,12 @@ exports[`Should render Header correctly 1`] = `
     activeClassName="is-active"
     to="/create"
   >
-    Create
+    Create-Expense
   </NavLink>
+  <button
+    onClick={[Function]}
+  >
+    Logout
+  </button>
 </div>
 `;

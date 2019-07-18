@@ -2,7 +2,9 @@ import React from 'react';
 
 import ConnectedExpenseList from './ExpenseList';
 import ExpenseListFilters from './ExpenseListFilters'
-import ExpensesSummary from '../components/ExpensesSummary';
+import ExpensesSummary from './ExpensesSummary';
+// import { LoginPage } from './LoginPage';
+
 
 const ExpenseDashboardPage = ()=> (
     <div>
