@@ -22,4 +22,4 @@ test('Should call startLogout on Logout button click', () => {
     const wrapper = shallow(<Header startLogout={startLogout} />);
     wrapper.find('button').simulate('click');
     expect(startLogout).toHaveBeenCalled();
-});
+}); 

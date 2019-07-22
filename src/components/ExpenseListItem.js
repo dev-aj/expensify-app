@@ -5,17 +5,16 @@ import NumberFormat from 'react-number-format';
 
 const ExpenseListItem = ({ id, description, amount, createdAt }) => {
     return (
-        <div>
-            <Link to={`/edit/${id}`}>
-                <h3> {description} </h3>
-            </Link>
-            
-            <p>
-            <NumberFormat thousandSeparator={true} thousandsGroupStyle="lakh" prefix={'₹'} displayType="text" value={amount} />
-            - 
-            {moment(createdAt).format("dddd, MMMM Do YYYY")}
-            </p>
-        </div>
+        <Link className="list-item" to={`/edit/${id}`}>
+            <div>
+                <h3 className="list-item__title"> {description} </h3>
+                <span className="list-item__sub-title">{moment(createdAt).format("dddd, MMMM Do YYYY")}</span>
+            </div>
+            <h3 className="list-item__data">
+                <NumberFormat thousandSeparator={true} thousandsGroupStyle="lakh" prefix={'₹'} 
+                displayType="text" value={amount} />
+            </h3> 
+        </Link>
     );
 };
 

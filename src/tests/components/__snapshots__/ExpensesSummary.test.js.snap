@@ -1,67 +1,117 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should correctly render expenses Summary with 1 expense 1`] = `
-<div>
-  <h1>
-    Viewing 
-    1
-     
-    expense
-     totalling
-    <NumberFormat
-      allowEmptyFormatting={false}
-      allowNegative={true}
-      decimalSeparator="."
-      displayType="text"
-      fixedDecimalScale={false}
-      getInputRef={[Function]}
-      isAllowed={[Function]}
-      isNumericString={false}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onMouseUp={[Function]}
-      onValueChange={[Function]}
-      prefix="₹"
-      suffix=""
-      thousandSeparator={true}
-      thousandsGroupStyle="lakh"
-      type="text"
-    />
-  </h1>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        1
+      </span>
+       
+      expense
+       totalling
+      <span>
+         
+      </span>
+      <span>
+        <NumberFormat
+          allowEmptyFormatting={false}
+          allowNegative={true}
+          decimalSeparator="."
+          displayType="text"
+          fixedDecimalScale={false}
+          getInputRef={[Function]}
+          isAllowed={[Function]}
+          isNumericString={false}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseUp={[Function]}
+          onValueChange={[Function]}
+          prefix="₹"
+          suffix=""
+          thousandSeparator={true}
+          thousandsGroupStyle="lakh"
+          type="text"
+        />
+      </span>
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button-layout"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Should correctly render expenses Summary with multiple expense 1`] = `
-<div>
-  <h1>
-    Viewing 
-    22
-     
-    expenses
-     totalling
-    <NumberFormat
-      allowEmptyFormatting={false}
-      allowNegative={true}
-      decimalSeparator="."
-      displayType="text"
-      fixedDecimalScale={false}
-      getInputRef={[Function]}
-      isAllowed={[Function]}
-      isNumericString={false}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      onMouseUp={[Function]}
-      onValueChange={[Function]}
-      prefix="₹"
-      suffix=""
-      thousandSeparator={true}
-      thousandsGroupStyle="lakh"
-      type="text"
-    />
-  </h1>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        22
+      </span>
+       
+      expenses
+       totalling
+      <span>
+         
+      </span>
+      <span>
+        <NumberFormat
+          allowEmptyFormatting={false}
+          allowNegative={true}
+          decimalSeparator="."
+          displayType="text"
+          fixedDecimalScale={false}
+          getInputRef={[Function]}
+          isAllowed={[Function]}
+          isNumericString={false}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseUp={[Function]}
+          onValueChange={[Function]}
+          prefix="₹"
+          suffix=""
+          thousandSeparator={true}
+          thousandsGroupStyle="lakh"
+          type="text"
+        />
+      </span>
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button-layout"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
